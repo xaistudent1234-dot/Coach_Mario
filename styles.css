@@ -72,6 +72,9 @@ h1, h2, h3, p { margin-top: 0; }
 .arrow-link { display: inline-flex; align-items: center; gap: 17px; padding-bottom: 7px; border-bottom: 1px solid var(--ink); color: var(--ink); font-size: 11px; font-weight: 700; }
 .arrow-link span { color: var(--accent); font-size: 16px; transition: transform .2s; }
 .arrow-link:hover span { transform: translate(3px, -3px); }
+.instagram-link { display: inline-flex; align-items: center; gap: 9px; }
+.instagram-link img { display: block; width: 20px; height: 20px; object-fit: contain; }
+.instagram-footer img { width: 15px; height: 15px; }
 .intro-stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 69px; padding-top: 25px; border-top: 1px solid var(--line); }
 .intro-stats div { display: flex; align-items: center; gap: 16px; }
 .intro-stats strong { font: 500 31px var(--display); }
@@ -94,6 +97,16 @@ h1, h2, h3, p { margin-top: 0; }
 .card-content h3 { margin: 0 0 6px; font: 500 28px var(--display); text-transform: uppercase; }
 .card-content p { max-width: 390px; margin: 0; color: #e4e1dd; font-size: 11px; line-height: 1.7; }
 .training-card:not(.training-card-large) .card-content h3 { font-size: 24px; }
+.training-video-showcase { margin-top: 58px; }
+.video-heading { display: grid; grid-template-columns: 1fr minmax(240px, .7fr); align-items: end; gap: 8px 35px; margin-bottom: 21px; }
+.video-heading .section-kicker { grid-column: 1 / -1; }
+.video-heading h3 { margin: 0; font: 500 34px/1.15 var(--display); text-transform: uppercase; }
+.video-heading > p { max-width: 360px; margin: 0 0 2px; color: #c0bdb9; font-size: 11px; line-height: 1.7; }
+.training-videos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; justify-items: center; }
+.training-video { width: min(100%, 310px); min-width: 0; padding: 12px; background: #242424; }
+.training-video video { display: block; width: 100%; aspect-ratio: 9 / 16; background: #101010; object-fit: contain; }
+.training-video h4 { margin: 14px 0 4px; font: 500 20px var(--display); text-transform: uppercase; }
+.training-video p { margin: 0; color: #c0bdb9; font-size: 10px; line-height: 1.7; }
 .training-note { display: flex; align-items: center; gap: 12px; margin-top: 23px; color: #c0bdb9; font-size: 11px; }
 .training-note span { color: var(--accent); font-size: 18px; }
 .offer-details { margin-top: 66px; border-top: 1px solid #454442; }
@@ -228,6 +241,12 @@ h1, h2, h3, p { margin-top: 0; }
   .training-grid { grid-template-columns: 1fr; grid-template-rows: auto; gap: 12px; }
   .training-card, .training-card-large { grid-row: auto; min-height: 340px; }
   .training-card-large { min-height: 410px; }
+  .training-video-showcase { margin-top: 45px; }
+  .video-heading { grid-template-columns: 1fr; gap: 10px; }
+  .video-heading h3 { font-size: 30px; }
+  .video-heading > p { max-width: 390px; }
+  .training-videos { grid-template-columns: 1fr; gap: 12px; }
+  .training-video { padding: 10px; }
   .training-note { align-items: flex-start; font-size: 10px; line-height: 1.7; }
   .offer-details { margin-top: 48px; }
   .offer-detail { grid-template-columns: 27px 1fr; gap: 13px; padding: 28px 0; }
